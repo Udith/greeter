@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a": {
+        "id": "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a",
+        "parent": null,
+        "name": "Greeter.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Greeter.js",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "Greeter"
+        },
+        "triggers": [],
+        "lastUpdated": 1610533172294,
+        "testCases": {
+          "88a22331-41e2-4bca-af4b-c6c765c512aa": {
+            "id": "88a22331-41e2-4bca-af4b-c6c765c512aa",
+            "name": "Greet Spanish",
+            "functionId": "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a",
+            "event": "{\n    \"name\": \"Emilio\",\n    \"language\": \"es\"\n}",
+            "eventTemplate": "hello-world"
+          },
+          "17b5ec8d-a1e2-42e1-9fa7-8db51c2ede45": {
+            "id": "17b5ec8d-a1e2-42e1-9fa7-8db51c2ede45",
+            "name": "Greet German",
+            "functionId": "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a",
+            "event": "{\n    \"name\": \"Ozil\",\n    \"language\": \"de\"\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a"
+    ],
+    "currentFileId": "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a",
+    "resources": {
+      "translateResource": {
+        "name": "translateResource",
+        "type": "Translate",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.817.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.5.0",
+    "projectName": "Greeter",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1610533579622
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "greeter",
+      "url": "https://github.com/Udith/greeter"
+    }
+  }
+}
