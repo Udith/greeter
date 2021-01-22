@@ -1,10 +1,11 @@
 const AWS = require('aws-sdk');
 const translate = new AWS.Translate();
+const moment = require("moment");
 
 exports.handler = async (event) => {
 
     let name = event['name'];
-    let language = event['lang'];
+    let language = event['language'];
 
     let greetingEn = getGreetingEn(name);
 
@@ -15,6 +16,7 @@ exports.handler = async (event) => {
             Text: greetingEn
         }).promise();
 
+        console.log("Translated at:", moment().format('YYYY-MMM-DD @ HH:mm'));
         return greetingTranslated;
 
     } catch (err) {
