@@ -9,7 +9,9 @@ exports.handler = async (event) => {
 
     let greetingEn = getGreetingEn(name);
 
-    try {
+    console.log("Translating text:", greetingEn, "to language:", language);
+
+    // try {
         let greetingTranslated = await translate.translateText({
             SourceLanguageCode: "en",
             TargetLanguageCode: language,
@@ -19,10 +21,10 @@ exports.handler = async (event) => {
         console.log("Translated at:", moment().format('YYYY-MMM-DD @ HH:mm'));
         return greetingTranslated;
 
-    } catch (err) {
-        console.log("Failed to translate greeting to language", language, err);
-        return greetingEn;
-    };
+    // } catch (err) {
+    //     console.log("Failed to translate greeting to language", language, err);
+    //     return greetingEn;
+    // };
 };
 
 function getGreetingEn(name) {
