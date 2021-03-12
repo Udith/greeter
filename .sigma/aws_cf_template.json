@@ -9,6 +9,10 @@
     "lambdaCodeKeyParameter": {
       "Type": "String",
       "Description": "S3 key of the Lambda deployment package"
+    },
+    "envVarSALUTATIONGreeterParameter": {
+      "Type": "String",
+      "Description": "Value of the environment variable: SALUTATION, for Lambda: Greeter"
     }
   },
   "Outputs": {
@@ -61,6 +65,10 @@
         },
         "Environment": {
           "Variables": {
+            "COMMON_ENV_VAR": "1357",
+            "SALUTATION": {
+              "Ref": "envVarSALUTATIONGreeterParameter"
+            },
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
@@ -138,6 +146,7 @@
         },
         "Environment": {
           "Variables": {
+            "COMMON_ENV_VAR": "1357",
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }

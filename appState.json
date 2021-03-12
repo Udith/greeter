@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Greeter.js",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 34,
+          "column": 37
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,7 +23,7 @@
           "name": "Greeter"
         },
         "triggers": [],
-        "lastUpdated": 1612940708698,
+        "lastUpdated": 1615550843658,
         "testCases": {
           "88a22331-41e2-4bca-af4b-c6c765c512aa": {
             "id": "88a22331-41e2-4bca-af4b-c6c765c512aa",
@@ -61,8 +61,8 @@
         "isRemovable": true,
         "filePath": "Hello.py",
         "cursor": {
-          "lineNumber": 9,
-          "column": 1
+          "lineNumber": 6,
+          "column": 41
         },
         "config": {
           "runtime": "python3.8",
@@ -73,7 +73,7 @@
           "name": "Hello"
         },
         "triggers": [],
-        "lastUpdated": 1612940697371,
+        "lastUpdated": 1615550811417,
         "testCases": {
           "8ebd8b79-997d-4f6d-ac5d-f61f0eb1e6e0": {
             "id": "8ebd8b79-997d-4f6d-ac5d-f61f0eb1e6e0",
@@ -121,6 +121,22 @@
         "shouldPersist": false,
         "displayOnly": false,
         "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "COMMON_ENV_VAR",
+        "varValue": "1357",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      },
+      {
+        "lambdaId": "6f5bac1a-924d-41bb-9d8b-d8f47f79d74a",
+        "varKey": "SALUTATION",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": true
       }
     ],
     "packageJSON": {
@@ -148,7 +164,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.5.2",
+    "sigmaVersion": "1.7.1",
     "projectName": "Greeter",
     "projectDescription": "",
     "projectVersion": "1.0.0",
@@ -156,7 +172,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1612942176245
+    "lastSave": 1615550885010
   },
   "VCS_STATE": {
     "provider": "GitHub",

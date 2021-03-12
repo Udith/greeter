@@ -5,6 +5,8 @@ const moment = require("moment");
 exports.handler = async (event) => {
     debugger;
 
+    console.log(process.env.COMMON_ENV_VAR);
+
     let name = event['name'];
     let language = event['language'];
 
@@ -29,5 +31,5 @@ exports.handler = async (event) => {
 };
 
 function getGreetingEn(name) {
-    return `Hello ${name}`;
+    return `${process.env.SALUTATION} ${name}`;
 }
